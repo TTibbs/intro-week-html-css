@@ -3,28 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>HTML & CSS Workshop</title>
   </head>
   <body>
+    
+    <!-- Header section -->
+
     <header>
-      <h1>Website Name</h1>
-      <a>
-        <h2 href="#footer">Go To Footer ⬇️</h2>
-      </a>
+      <div class="header-container">
+        <a href="#"
+          ><img src="/public/web-icon.png" alt="Website logo" class="logo"
+        /></a>
+        <h1>Website Name</h1>
+        <a href="#footer">
+          <h3>Go To Footer ⬇️</h3>
+        </a>
+      </div>
     </header>
+
+    <!-- End of header section -->
+
+    <!-- Main section -->
+
     <main>
+
+      <!--HTML tags sections -->
+
       <section id="text-tags-section">
-        <h1 class="main-heading">Heading & p tag</h1>
+        <h1 class="main-heading">Headers & p tags</h1>
         <div class="tags-container">
-          <h1 class="tag-container text-zoom">I am a H1 tag</h1>
-          <h2 class="tag-container text-zoom">I am a H2 tag</h2>
-          <h3 class="tag-container text-zoom">I am a H3 tag</h3>
-          <h4 class="tag-container text-zoom">I am a H4 tag</h4>
-          <h5 class="tag-container text-zoom">I am a H5 tag</h5>
-          <h6 class="tag-container text-zoom">I am a H6 tag</h6>
-          <p class="tag-container text-zoom">I am a paragraph tag</p>
-          <a class="tag-container text-zoom"
+          <h1 class="tag-container">I am a H1 tag</h1>
+          <h2 class="tag-container">I am a H2 tag</h2>
+          <h3 class="tag-container">I am a H3 tag</h3>
+          <h4 class="tag-container">I am a H4 tag</h4>
+          <h5 class="tag-container">I am a H5 tag</h5>
+          <h6 class="tag-container">I am a H6 tag</h6>
+          <p class="tag-container">I am a paragraph tag</p>
+          <a class="tag-container"
             ><button href="https://google.com" class="internal-link">
               Link in same tab
             </button></a
@@ -40,10 +62,15 @@
           >
         </div>
       </section>
+
+      <!-- End of HTML tags section -->
+
+      <!-- Images Section -->
+
       <section id="images-section">
         <h1 class="images-title">Images</h1>
         <div class="images-container">
-          <figure>
+          <figure class="fig-container">
             <img
               src="/public/eminem-wallpaper-removebg-preview.png"
               alt="Image of Eminem"
@@ -53,9 +80,9 @@
               My favourite artist is:
             </figcaption>
           </figure>
-          <figure>
+          <figure class="fig-container">
             <img
-              src="/public/yorkshire-tea.jpeg"
+              src="/public/yorkshire-tea-removebg-preview.png"
               alt="Yorkshire tea is the best tea"
               class="fig-img"
             />
@@ -65,12 +92,20 @@
           </figure>
         </div>
       </section>
+
+      <!-- End of images section -->
+
     </main>
+
+    <!-- End of main section -->
+
+    <!-- Footer section -->
+
     <footer id="footer">
-      <ul>
-        <li>Unordered list item 1</li>
-        <li>Unordered list item 2</li>
-        <li>Unordered list item 3</li>
+      <ul class="unordered-list">
+        <li class="list-item">Unordered list item 1</li>
+        <li class="list-item">Unordered list item 2</li>
+        <li class="list-item">Unordered list item 3</li>
       </ul>
       <ol>
         <li>Ordered list item 1</li>
@@ -78,5 +113,11 @@
         <li>Ordered list item 3</li>
       </ol>
     </footer>
+
+    <!-- End of footer section -->
+
+    <!-- JavaScript file extension -->
+
+    <script src="index.js"></script>
   </body>
 </html>
